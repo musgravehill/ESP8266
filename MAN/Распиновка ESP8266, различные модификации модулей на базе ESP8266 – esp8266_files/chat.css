@@ -1,0 +1,65 @@
+pre.chatty {
+padding: 10px 10px !important;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -o-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        border-radius: 8px;
+        border: 1px solid #272822;
+        background-color: #dce2ee;        
+}
+.chatty ul {
+        padding: 0;
+        margin:  0;
+}
+.chatty ul li {
+   list-style: none;
+   padding: 10px 0 0 0;
+   color: #000;
+   font: 100 23px Helvetica, Arial, sans-serif;
+   background-repeat: no-repeat;
+   overflow: hidden;
+}
+.chatty ul li p {
+   width: 290px;
+   position: relative;
+   z-index: 100;
+   margin: 0 0 10px;
+   word-wrap: normal;
+   line-height: normal;
+   white-space: normal;
+}
+.chatty ul li.grey {
+   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+   background-image: url(images/msg_grey.jpg);
+   padding-left: 30px;
+   margin-bottom: 0;
+   margin-left: 10px;
+}
+.chatty ul li.grey-bottom {
+   background-image: url(images/msg_grey_bottom.jpg);
+   width: 330px;
+   height: 19px;
+   position: relative;
+   margin-top: -55px;
+   z-index: 99;
+   margin-left: 10px;
+}
+.chatty ul li.blue {
+   text-shadow: -1px 0 #d3efff, 0 1px #d3efff, 1px 0 #d3efff, 0 -1px #d3efff;
+   background-image: url(images/msg_blue.jpg);
+   padding-left: 30px;
+   margin-bottom: 0;
+   text-align: left;
+   margin-left: 40%;
+}
+.chatty ul li.blue-bottom {
+   background-image: url(images/msg_blue_bottom.jpg);
+   width: 330px;
+   height: 19px;
+   position: relative;
+   margin-top: -55px;
+   z-index: 99;
+   margin-left: 40%;
+}

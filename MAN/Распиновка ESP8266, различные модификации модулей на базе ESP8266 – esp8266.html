@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://esp8266.ru/modules-esp8266/ -->
+<html lang="ru-RU" prefix="og: http://ogp.me/ns#"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/8f13eb1169"></script><script src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/nr-768.min.js"></script><script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" async="" src="http://mc.yandex.ru/metrika/watch.js"></script><script id="facebook-jssdk" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/sdk.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://esp8266.ru/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="http://esp8266.ru/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+	  
+<!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="В статье описаны различные модификации модулей на базе ESP8266. ESP-01 (Wi07c), ESP-02, ESP-03, ESP-04, ESP-05, ESP-06, ESP-07, ESP-08, ESP-09, ESP-10, ESP-11">
+<link rel="canonical" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266.html">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266">
+<meta property="og:description" content="В статье описаны различные модификации модулей на базе ESP8266. ESP-01 (Wi07c), ESP-02, ESP-03, ESP-04, ESP-05, ESP-06, ESP-07, ESP-08, ESP-09, ESP-10, ESP-11">
+<meta property="og:url" content="http://esp8266.ru/modules-esp8266/">
+<meta property="og:site_name" content="esp8266">
+<meta property="article:author" content="https://www.facebook.com/esp8266">
+<meta property="article:tag" content="datasheet">
+<meta property="article:tag" content="ESD-12">
+<meta property="article:tag" content="ESP-01">
+<meta property="article:tag" content="ESP-02">
+<meta property="article:tag" content="ESP-03">
+<meta property="article:tag" content="ESP-04">
+<meta property="article:tag" content="ESP-05">
+<meta property="article:tag" content="ESP-06">
+<meta property="article:tag" content="ESP-07">
+<meta property="article:tag" content="ESP-08">
+<meta property="article:tag" content="ESP-09">
+<meta property="article:tag" content="ESP-10">
+<meta property="article:tag" content="ESP-11">
+<meta property="article:tag" content="ESP-12">
+<meta property="article:tag" content="ESP-12-D">
+<meta property="article:tag" content="ESP-12-E">
+<meta property="article:tag" content="ESP-12-Q">
+<meta property="article:tag" content="ESP-12D">
+<meta property="article:tag" content="ESP-12E">
+<meta property="article:tag" content="ESP-12Q">
+<meta property="article:tag" content="ESP-13">
+<meta property="article:tag" content="esp8266">
+<meta property="article:tag" content="esp8266 datasheet">
+<meta property="article:tag" content="ESPD-12">
+<meta property="article:tag" content="layouts">
+<meta property="article:tag" content="pinouts">
+<meta property="article:tag" content="WROOM">
+<meta property="article:tag" content="WROOM-02">
+<meta property="article:section" content="ESP8266 для начинающих">
+<meta property="article:published_time" content="2014-11-09T02:16:30+00:00">
+<meta property="article:modified_time" content="2015-06-05T10:21:52+00:00">
+<meta property="og:updated_time" content="2015-06-05T10:21:52+00:00">
+<meta property="og:image" content="http://esp8266.ru/wp-content/uploads/2014/11/esp8266-espXX-300x238.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="В статье описаны различные модификации модулей на базе ESP8266. ESP-01 (Wi07c), ESP-02, ESP-03, ESP-04, ESP-05, ESP-06, ESP-07, ESP-08, ESP-09, ESP-10, ESP-11">
+<meta name="twitter:title" content="Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266">
+<meta name="twitter:domain" content="esp8266">
+<meta name="twitter:image" content="http://esp8266.ru/wp-content/uploads/2014/11/esp8266-espXX-300x238.jpg">
+<meta name="twitter:creator" content="@esp8266">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="esp8266 » Лента" href="http://esp8266.ru/feed/">
+<link rel="alternate" type="application/rss+xml" title="esp8266 » Лента комментариев" href="http://esp8266.ru/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/esp8266.ru\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="yarppWidgetCss-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/widget.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpfb-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wp-filebase.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ai_style-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ai_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="chat-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/chat.css" type="text/css" media="all">
+<link rel="stylesheet" id="sb_instagram_styles-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/sb-instagram.css" type="text/css" media="all">
+<link rel="stylesheet" id="sb_instagram_icons-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/font-awesome.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="estilo-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/estilo.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-lightbox-2.min.css-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/lightbox.min.ru_RU.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/style.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://esp8266.ru/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="tablepress-default-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/default.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/jquery.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/esp8266.ru\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"\u041d\u0430\u0436\u043c\u0438\u0442\u0435 %s \u0434\u043b\u044f \u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f, %s \u0434\u043b\u044f \u0432\u0441\u0442\u0430\u0432\u043a\u0438","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/crayon.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"http:\/\/esp8266.ru\/wp-admin\/admin-ajax.php","we_value":"1234"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ai.js"></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://esp8266.ru/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="ESPCustom">
+<link rel="shortlink" href="http://wp.me/p5jTJJ-z">
+<!-- <meta name="NextGEN" version="2.1.15" /> -->
+<link rel="stylesheet" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/widgetkit-22668a53.css">
+<script src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/widgetkit-7fa39e86.js"></script>
+
+<link rel="dns-prefetch" href="http://i0.wp.com/">
+<link rel="dns-prefetch" href="http://i1.wp.com/">
+<link rel="dns-prefetch" href="http://i2.wp.com/">
+	<style type="text/css" id="twentytwelve-header-css">
+			.site-header h1 a,
+		.site-header h2 {
+			color: #1e73be;
+		}
+		</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('http://esp8266.ru/wp-content/uploads/ESP8266P.jpg'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
+</style>
+<link rel="stylesheet" id="yarppRelatedCss-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/related.css" type="text/css" media="all">
+<link rel="stylesheet" id="nextgen_widgets_style-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/widgets.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="nextgen_basic_thumbnails_style-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/nextgen_basic_thumbnails.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ngg_trigger_buttons-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/trigger_buttons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-0-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/jquery.fancybox-1.3.4.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/font-awesome.min(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="nextgen_pagination_style-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/style.min.css" type="text/css" media="all">
+<!-- Inline jetpack_facebook_likebox -->
+<style id="jetpack_facebook_likebox-inline-css" type="text/css">
+.widget_facebook_likebox {
+	overflow: hidden;
+}
+
+</style>
+<link rel="stylesheet" id="nggallery-css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/nggallery.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/prettify.css"><link rel="stylesheet" type="text/css" href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/prettify.css"><style type="text/css">
+.lessbuttons_com_slider{
+    height:400px;
+    width: 40px;
+    display:inline-block;
+    position:fixed;
+    right:0px;
+    top:20%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 100901;
+    visibility: visible;
+    font-style: normal;
+}
+
+.lessbuttons_com_slider_internal{
+    height:20px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+.lessbuttons_com_button {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    height: 42px;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-size: 2px;
+    border-width: 0px;
+    
+    -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    
+    text-align: left;
+    float: right;
+}
+
+.lessbuttons_com_button_white {
+    background-color:
+    #FFFFFF;
+    border: 1px solid #e0e0e0;
+    border-right-width: 0px;
+}
+
+.lessbuttons_com_socimg {
+    position:absolute;
+    display: inline-block;
+    left:0px;
+    top:0px;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    height: 30px;
+    background-image: url('https://lessbuttons.com/images/sprite.64.small-fs8.png');
+    background-size: 32px 500px;
+    background-repeat: no-repeat;
+}
+
+.lessbuttons_com_socimg svg, .lessbuttons_com_othersocimg svg, .lessbuttons_com_arrow svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.lessbuttons_com_button:hover {
+    width: 40px;
+    
+        -webkit-transition: width 0.1s ease-in-out;
+    -moz-transition: width 0.1s ease-in-out;
+    -o-transition: width 0.1s ease-in-out;
+    transition: width 0.1s ease-in-out;
+}
+
+.lessbuttons_com_button_text {
+    display: inline-block;
+    height: 10px;
+    line-height: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    color: white;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 30px;
+    right: 0px;
+}
+
+.lessbuttons_com_holder .lessbuttons_com_find_shares {
+    display: inline-block;
+    height: 10px;
+    line-height: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 10px;
+    color: white;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 30px;
+    right: 1px;
+    position: absolute;
+    background-image: 
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 512 512"><path fill="#FFFFFF" d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3 c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2 c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2 c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"/></svg>');
+}
+
+.lessbuttons_com_button_white .lessbuttons_com_find_shares {
+    display: inline-block;
+    height: 9px;
+    line-height: 9px;
+    margin: 0px;
+    padding: 0px;
+    width: 9px;
+    color: white;
+    font-size: 9px;
+    font-weight: normal;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 30px;
+    right: 2px;
+    position: absolute;
+    background-image: 
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 512 512"><path fill="#000000" d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3 c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2 c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2 c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"/></svg>');
+}
+
+.lessbuttons_com_holder{
+    width: 42px;
+    height:32px;
+    position:relative;
+    margin: 0px;
+    padding: 0px;
+    floar: left;
+}
+
+.lessbuttons_com_frame{
+    position:absolute;
+    left:-1px;
+    top: 24px;
+    width: 44px;
+    height:24px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    -ms-zoom: 0.65;
+    -moz-transform: scale(0.65);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.65);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.65);
+    -webkit-transform-origin: 0 0;
+}
+
+.lessbuttons_com_gim {
+    position:absolute;
+    display: inline-block;
+    left:0px;
+    top:0px;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    height: 30px;
+    background-image: url('https://lessbuttons.com/images/sprite.64.small-fs8.png');
+    background-size: 32px 500px;
+    background-repeat: no-repeat;
+    
+    background-position: 0 -64px;
+    background-color: white;
+    width: 31px;
+    height: 30px;
+}
+
+.lessbuttons_com_cover{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 32px;
+    height:48px;
+    cursor:pointer;
+}
+
+.lessbuttons_com_otherbutton {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    height: 42px;
+    background-color: white;
+    cursor:pointer;
+    font-size: 2px;
+    border-width: 0px;
+    
+    -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    
+    text-align: left;
+    float: right;
+}
+
+.lessbuttons_com_otherbutton:hover {
+    width: 40px;
+    
+        -webkit-transition: width 0.1s ease-in-out;
+    -moz-transition: width 0.1s ease-in-out;
+    -o-transition: width 0.1s ease-in-out;
+    transition: width 0.1s ease-in-out;
+}
+
+.lessbuttons_com_othersocimg {
+    position:absolute;
+    display: inline-block;
+    left:0px;
+    top:0px;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    height: 32px;
+    background-image: url('https://lessbuttons.com/images/sprite.64.all-fs8.png');
+    background-size: 32px 10000px;
+    background-repeat: no-repeat;
+    float: right;
+}
+.lessbuttons_com_rotate90 {
+    rotation: 90deg;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+.lessbuttons_com_rotate180 {
+    rotation: 180deg;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+.lessbuttons_com_rotate270 {
+    rotation: 270deg;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+}
+
+.lessbuttons_com_buttons_more {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    margin: 0px;
+    padding: 0px;
+    width: 32px;
+    border: 0px;
+    top: 0px;
+    background-color: #FB6C1E;
+    float: right;
+}
+
+.lessbuttons_com_arrow {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 16px;
+    height: 16px;
+    background-image: url('https://lessbuttons.com/images/sprite.64.small-fs8.png');
+    background-size: 32px 500px;
+    background-repeat: no-repeat;
+    background-position: 0 -256px;
+    border: 0px;
+    top: 0px;
+    cursor:pointer;
+}
+
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body class="single single-post postid-35 single-format-standard custom-background custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup style="background:url(&#39;http://esp8266.ru/wp-content/uploads/2014/11/wp-logo.jpg&#39;); height:250px;">
+<a href="http://esp8266.ru/" title="esp8266" rel="home">
+			<h1 class="site-title">esp8266</h1>
+			<h2 class="site-description">Сообщество разработчиков</h2>
+</a>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Меню</button>
+			<a class="assistive-text" href="http://esp8266.ru/modules-esp8266/#content" title="Перейти к содержимому">Перейти к содержимому</a>
+			<div class="menu-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-container"><ul id="menu-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e" class="nav-menu"><li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://esp8266.ru/">Главная</a></li>
+<li id="menu-item-790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-790"><a href="http://esp8266.ru/downloads/esp8266-doc/#wpfb-cat-1">Datasheets</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="http://esp8266.ru/downloads/">Загрузки</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://esp8266.ru/forum">Форум</a></li>
+<li id="menu-item-358" class="menu-item menu-item-type-taxonomy menu-item-object-ngg_tag menu-item-358"><a title="ESP8266" href="http://esp8266.ru/ngg_tag/esp8266/">Фото</a></li>
+<li id="menu-item-678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-678"><a href="http://esp8266.ru/esplorer/">ESPlorer</a></li>
+<li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="http://esp8266.ru/kupit-esp8266/">Купить ESP8266</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="http://esp8266.ru/about/">О сайте</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+	</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-35" class="post-35 post type-post status-publish format-standard hentry category-esp8266-for-beginners category-esp8266-hardware category-esp8266 tag-datasheet tag-esd-12 tag-esp-01 tag-esp-02 tag-esp-03 tag-esp-04 tag-esp-05 tag-esp-06 tag-esp-07 tag-esp-08 tag-esp-09 tag-esp-10 tag-esp-11 tag-esp-12 tag-esp-12-d tag-esp-12-e tag-esp-12-q tag-esp-12d tag-esp-12e tag-esp-12q tag-esp-13 tag-esp8266-2 tag-esp8266-datasheet tag-espd-12 tag-layouts tag-pinouts tag-wroom tag-wroom-02">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Распиновка ESP8266, различные модификации модулей на базе ESP8266</h1>
+								</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<h1>ESP8266</h1>
+<div id="attachment_36" style="width: 310px" class="wp-caption alignleft"><a title="esp8266" href="http://esp8266.ru/wp-content/uploads/2014/11/esp8266-espXX.jpg" rel="lightbox[35]"><img class="wp-image-36 size-medium" title="ESP8266 ESP-01 ESP-02 ESP-03 ESP-04 ESP-05 ESP-06 ESP-07 ESP-08 ESP-09 ESP-10 ESP-11" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp8266-espXX-300x238.jpg" alt="ESP8266 ESP-01 ESP-02 ESP-03 ESP-04 ESP-05 ESP-06 ESP-07 ESP-08 ESP-09 ESP-10 ESP-11" width="300" height="238"></a><p class="wp-caption-text">ESP8266 ESP-01 ESP-02 ESP-03 ESP-04 ESP-05 ESP-06 ESP-07 ESP-08 ESP-09 ESP-10 ESP-11 ESP-12</p></div>
+<p align="justify">Распиновка, характеристики и отличия модулей esp8266 вы найдете в таблице ниже. Также Вас может заинтересовать&nbsp;<a href="http://esp8266.ru/esp8266ex-pinouts/" target="_blank">распиновка чипа ESP8266EX</a></p>
+<p align="justify">Информация обновлена по состоянию на 05.06.2015 г.</p>
+<p align="justify"><span id="more-35"></span></p>
+<p align="justify">Самая распространенная версия модуля – это ESP-01. Иногда в сети встречается обозначение Wi07c. Как видите, на ней разведены 8 контактов: VCC 3.3v, GND, UTXD, URXD, CH_PD, GPIO0, GPIO2, GPIO6. На плате реализована PCB антенна.</p>
+<p align="justify"><strong>Модуль ESP-01 имеет <a href="http://esp8266.ru/forum/threads/prozrachnyj-most-wifi-uart-na-esp2866.323/page-3#post-7147" target="_blank">конструктивные недостатки</a></strong>:</p>
+<ul>
+<li>Большинство выводов SoC ESP8266EX в модуле ESP-01 находятся в “висячем” состоянии, т.е. никуда не подключены, что приводит к непредсказуемым состояниям и может приводить к повышенному потреблению и перегреву чипа.</li>
+<li>Модуль ESP-01 не поддерживает режим “глубокого сна” (deep_sleep)</li>
+<li>Модуль ESP-01 не имеет ни одной ножки, на которой нет сигналов при старте модуля, т.е. управлять им даже включением лампочки никак. Она будет моргать при включении.</li>
+</ul>
+<p style="text-align: justify;">Кроме модуля ESP8266 ESP-01 в продаже сейчас еще несколько&nbsp;модификаций: с подключением внешней антенны, с керамической антенной, с PCB антенной, без антенны. Также&nbsp;на разных модулях выведено разное количество GPIO.</p>
+<p style="text-align: justify;">Если вы <a href="http://j.mp/1KPW124" target="_blank" rel="nofollow">планируете приобрести ESP8266</a>, то мы рекомендуем вам присмотреться к ESP-07 (керамическая антенна) или к одной из модификаций ESP-12 с PCB антенной (ESD-12, ESP12E и т.д.)</p>
+<p style="text-align: justify;">Для удобства работы с <a href="http://j.mp/1KIoSSP" target="_blank" rel="nofollow">беспаечными макетными платами</a>&nbsp;можно использовать <a href="http://j.mp/1KIoWlh" target="_blank" rel="nofollow">специальный адаптер</a>&nbsp;или приобрести недорогую <a href="http://j.mp/1KIpaJd" target="_blank" rel="nofollow">dev board</a> со встроенным стабилизатором питания и подтянутыми GPIO, которая неплохо себя зарекомендовала.</p>
+<p style="text-align: justify;"><strong>Внимание!</strong> <em>Сейчас нет единого стандарта на распиновку модулей. В разное время производители модулей использовали разные варианты распиновки. Старайтесь приобретать модули, по возможности, с подписанными пинами прямо на плате.&nbsp;Если пины на вашем модуле не подписаны, то требуйте у продавца описание подключения.</em></p>
+<p style="text-align: justify;"><strong>Внимание!</strong> <em>Очень много модулей ESP-07, ESP-12 и других, с перепутанными GPIO4 и GPIO5.</em></p>
+<p style="text-align: justify;">Обсуждение модификаций модулей на&nbsp;<a href="http://esp8266.ru/forum/threads/raspinovka-i-opisanie-modulej-esp8266.81/" target="_blank">нашем форуме</a></p>
+<h2 class="tablepress-table-name tablepress-table-name-id-1">Модули ESP8266</h2>
+<span class="tablepress-table-description tablepress-table-description-id-1">ESP-01, ESP-02, ESP-03, ESP-04, ESP-05, ESP-06, ESP-07, ESP-08, ESP-09, ESP-10, ESP-11, ESP-12, ESD-12, ESP-13, WROOM, WROOM-02</span>
+
+<table id="tablepress-1" class="tablepress tablepress-id-1">
+<thead>
+<tr class="row-1">
+	<th class="column-1">Фото модуля</th><th class="column-2">Распиновка (pinouts) модуля</th><th class="column-3">Описание модуля</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2">
+	<td class="column-1"><div id="attachment_19" style="width: 260px" class="wp-caption aligncenter"><a href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp8266.png" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp8266.png" alt="ESP8266 ESP-01" width="250" height="217" class="size-full wp-image-19"></a><p class="wp-caption-text">ESP8266 ESP-01</p></div></td><td class="column-2"><div id="attachment_300" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-01_V090_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-01_V090_pinouts-150x150.jpg" alt="ESP8266 ESP-01 V090 pinouts" width="150" height="150" class="size-thumbnail wp-image-300"></a><p class="wp-caption-text">ESP8266 ESP-01 V090 pinouts</p></div><br>
+<br>
+<div id="attachment_299" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-01_V080_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-01_V080_pinouts-150x150.jpg" alt="ESP8266 ESP-01 V080 pinouts" width="150" height="150" class="size-thumbnail wp-image-299"></a><p class="wp-caption-text">ESP8266 ESP-01 V080 pinouts</p></div></td><td class="column-3">ESP8266 ESP-01 V090 (он же Wi07c) самый популярный модуль. PCB антенна обеспечивает дальность - до 400м на открытом пространстве. Следует знать, что существует старая версия V080, в которой разведены только 4 контакта</td>
+</tr>
+<tr class="row-3">
+	<td class="column-1"><div id="attachment_301" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-02.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-02-150x150.jpg" alt="ESP8266 ESP-02" width="150" height="150" class="size-thumbnail wp-image-301"></a><p class="wp-caption-text">ESP8266 ESP-02</p></div></td><td class="column-2"><div id="attachment_302" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-02_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-02_pinouts-150x150.jpg" alt="ESP8266 ESP-02 pinouts" width="150" height="150" class="size-thumbnail wp-image-302"></a><p class="wp-caption-text">ESP8266 ESP-02 pinouts</p></div></td><td class="column-3">ESP8266 ESP-02 SMD, разъем IPX для внешней антенны</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1"><div id="attachment_303" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-03.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-03-150x150.jpg" alt="ESP8266 ESP-03" width="150" height="150" class="size-thumbnail wp-image-303"></a><p class="wp-caption-text">ESP8266 ESP-03</p></div></td><td class="column-2"><div id="attachment_304" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-03_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-03_pinouts-150x150.jpg" alt="ESP8266 ESP-03 pinouts" width="150" height="150" class="size-thumbnail wp-image-304"></a><p class="wp-caption-text">ESP8266 ESP-03 pinouts</p></div></td><td class="column-3">ESP8266 ESP-03 SMD, керамическая антенна, разведены все доступные GPIO</td>
+</tr>
+<tr class="row-5">
+	<td class="column-1"><div id="attachment_305" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-04.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-04-150x150.jpg" alt="ESP8266 ESP-04" width="150" height="150" class="size-thumbnail wp-image-305"></a><p class="wp-caption-text">ESP8266 ESP-04</p></div></td><td class="column-2"><div id="attachment_306" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-04_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-04_pinouts-150x150.jpg" alt="ESP8266 ESP-04 pinouts" width="150" height="150" class="size-thumbnail wp-image-306"></a><p class="wp-caption-text">ESP8266 ESP-04 pinouts</p></div></td><td class="column-3">ESP-04 SMD, без антенны, разведены все доступные GPIO</td>
+</tr>
+<tr class="row-6">
+	<td class="column-1"><div id="attachment_307" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-05.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-05-150x150.jpg" alt="ESP8266 ESP-05" width="150" height="150" class="size-thumbnail wp-image-307"></a><p class="wp-caption-text">ESP8266 ESP-05</p></div></td><td class="column-2"><div id="attachment_308" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-05_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-05_pinouts-150x150.jpg" alt="ESP8266 ESP-05 pinouts" width="150" height="150" class="size-thumbnail wp-image-308"></a><p class="wp-caption-text">ESP8266 ESP-05 pinouts</p></div></td><td class="column-3">ESP-05, разведены только VCC33, GND, TX, RX, RST, миниатюрная антенна</td>
+</tr>
+<tr class="row-7">
+	<td class="column-1"><div id="attachment_309" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-06.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-06-150x150.jpg" alt="ESP8266 ESP-06" width="150" height="150" class="size-thumbnail wp-image-309"></a><p class="wp-caption-text">ESP8266 ESP-06</p></div></td><td class="column-2"><div id="attachment_310" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-06_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-06_pinouts-150x150.jpg" alt="ESP8266 ESP-06 pinouts" width="150" height="150" class="size-thumbnail wp-image-310"></a><p class="wp-caption-text">ESP8266 ESP-06 pinouts</p></div></td><td class="column-3">ESP-06 контактные площадки расположены снизу, сверху металлический экран</td>
+</tr>
+<tr class="row-8">
+	<td class="column-1"><div id="attachment_311" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-07.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-07-150x150.jpg" alt="ESP8266 ESP-07" width="150" height="150" class="size-thumbnail wp-image-311"></a><p class="wp-caption-text">ESP8266 ESP-07</p></div></td><td class="column-2"><div id="attachment_312" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-07_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-07_pinouts-150x150.jpg" alt="ESP8266 ESP-07 pinouts" width="150" height="150" class="size-thumbnail wp-image-312"></a><p class="wp-caption-text">ESP8266 ESP-07 pinouts</p></div></td><td class="column-3">ESP-07 керамическая антенна и разъем для внешней антенны, металлический экран</td>
+</tr>
+<tr class="row-9">
+	<td class="column-1"><div id="attachment_313" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-08.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-08-150x150.jpg" alt="ESP8266 ESP-08" width="150" height="150" class="size-thumbnail wp-image-313"></a><p class="wp-caption-text">ESP8266 ESP-08</p></div></td><td class="column-2"><div id="attachment_314" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-08_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-08_pinouts-150x150.jpg" alt="ESP8266 ESP-08 pinouts" width="150" height="150" class="size-thumbnail wp-image-314"></a><p class="wp-caption-text">ESP8266 ESP-08 pinouts</p></div></td><td class="column-3">ESP-08 как ESP-07, только без антенны</td>
+</tr>
+<tr class="row-10">
+	<td class="column-1"><div id="attachment_315" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-09.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-09-150x150.jpg" alt="ESP8266 ESP-09" width="150" height="150" class="size-thumbnail wp-image-315"></a><p class="wp-caption-text">ESP8266 ESP-09</p></div></td><td class="column-2"><div id="attachment_316" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-09_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-09_pinouts-150x150.jpg" alt="ESP8266 ESP-09 pinouts" width="150" height="150" class="size-thumbnail wp-image-316"></a><p class="wp-caption-text">ESP8266 ESP-09 pinouts</p></div></td><td class="column-3">ESP-09 самый маленький модуль - 10х10мм, контактные площадки расположены снизу</td>
+</tr>
+<tr class="row-11">
+	<td class="column-1"><div id="attachment_317" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-10.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-10-150x150.jpg" alt="ESP8266 ESP-10" width="150" height="150" class="size-thumbnail wp-image-317"></a><p class="wp-caption-text">ESP8266 ESP-10</p></div></td><td class="column-2"><div id="attachment_318" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-10_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-10_pinouts-150x150.jpg" alt="ESP8266 ESP-10 pinouts" width="150" height="150" class="size-thumbnail wp-image-318"></a><p class="wp-caption-text">ESP8266 ESP-10 pinouts</p></div></td><td class="column-3">ESP-10 patch interface, ширина модуля 10мм</td>
+</tr>
+<tr class="row-12">
+	<td class="column-1"><div id="attachment_319" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-11.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-11-150x150.jpg" alt="ESP8266 ESP-11" width="150" height="150" class="size-thumbnail wp-image-319"></a><p class="wp-caption-text">ESP8266 ESP-11</p></div></td><td class="column-2"><div id="attachment_320" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-11_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-11_pinouts-150x150.jpg" alt="ESP8266 ESP-11 pinouts" width="150" height="150" class="size-thumbnail wp-image-320"></a><p class="wp-caption-text">ESP8266 ESP-11 pinouts</p></div></td><td class="column-3">ESP-11 patch interface, керамическая антенна</td>
+</tr>
+<tr class="row-13">
+	<td class="column-1"><div id="attachment_541" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_esp-12.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_esp-12-150x150.jpg" alt="ESP8266 ESP-12" width="150" height="150" class="size-thumbnail wp-image-541"></a><p class="wp-caption-text">ESP8266 ESP-12</p></div></td><td class="column-2"><div id="attachment_765" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/ESP8266_ESP-12_pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ESP8266_ESP-12_pinouts-150x150.jpg" alt="ESP8266 ESP-12 pinouts" width="150" height="150" class="size-thumbnail wp-image-765"></a><p class="wp-caption-text">ESP8266 ESP-12 pinouts</p></div></td><td class="column-3">ESP-12 PCB антенна, flash память 512 кбайт</td>
+</tr>
+<tr class="row-14">
+	<td class="column-1"></td><td class="column-2"></td><td class="column-3">ESD-12 (ESPD-12) Внешний вид и распиновка в точности как у ESP-12. Отличается только размером flash памяти - 4Мбайт</td>
+</tr>
+<tr class="row-15">
+	<td class="column-1"><div id="attachment_914" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/esp-12-e.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp-12-e-150x150.jpg" alt="esp-12-e" width="150" height="150" class="size-thumbnail wp-image-914"></a><p class="wp-caption-text">esp-12-e</p></div></td><td class="column-2"><div id="attachment_920" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/esp12-e_pinouts2.png" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp12-e_pinouts2-150x150.png" alt="esp12-e pinouts" width="150" height="150" class="size-thumbnail wp-image-920"></a><p class="wp-caption-text">esp12-e pinouts</p></div></td><td class="column-3">ESP-12-E как ESP-12 только выведено дополнительно с торца 6 пинов.<br>
+Существуют еще модификации ESP-12-D и ESP-12-Q отличающиеся размером flash памяти</td>
+</tr>
+<tr class="row-16">
+	<td class="column-1"><div id="attachment_916" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/esp-13.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp-13-150x150.jpg" alt="esp-13" width="150" height="150" class="size-thumbnail wp-image-916"></a><p class="wp-caption-text">esp-13</p></div></td><td class="column-2"><div id="attachment_918" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/esp-13_pinouts.png" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp-13_pinouts-150x150.png" alt="esp-13 pinouts" width="150" height="150" class="size-thumbnail wp-image-918"></a><p class="wp-caption-text">esp-13 pinouts</p></div></td><td class="column-3">ESP-13 - аналог WROOM-02 от Espressif, только производства AI-THINKER</td>
+</tr>
+<tr class="row-17">
+	<td class="column-1"><div id="attachment_923" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/wroom.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wroom-150x150.jpg" alt="wroom" width="150" height="150" class="size-thumbnail wp-image-923"></a><p class="wp-caption-text">wroom</p></div></td><td class="column-2"><div id="attachment_924" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/wroom-pinouts.jpg" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wroom-pinouts-150x150.jpg" alt="wroom pinouts" width="150" height="150" class="size-thumbnail wp-image-924"></a><p class="wp-caption-text">wroom pinouts</p></div></td><td class="column-3">WROOM модуль примечателен тем, что выпущен производителем SoC ESP8266EX Espressif</td>
+</tr>
+<tr class="row-18">
+	<td class="column-1"><div id="attachment_927" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/wroom-021.png" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wroom-021-150x150.png" alt="wroom-02" width="150" height="150" class="size-thumbnail wp-image-927"></a><p class="wp-caption-text">wroom-02</p></div></td><td class="column-2"><div id="attachment_929" style="width: 160px" class="wp-caption aligncenter"><a href="http://esp8266.ru/wp-content/uploads/wroom-02-pinouts.png" rel="lightbox[35]"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wroom-02-pinouts-150x150.png" alt="wroom-02 pinouts" width="150" height="150" class="size-thumbnail wp-image-929"></a><p class="wp-caption-text">wroom-02 pinouts</p></div></td><td class="column-3">WROOM-02 модуль примечателен тем, что выпущен производителем SoC ESP8266EX Espressif. Имеет клон - это ESP-13 от AI-THINKER</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-1 from cache -->
+<!--Ad Injection:bottom-->
+<div style=""><center><h2>Купить ESP8266</h2>
+Купить ESP8266&nbsp;по разумной цене пока можно только в зарубежных интернет-магазинах
+<a title="Купить ESP8266" href="http://ad.admitad.com/goto/1e8d114494955f13761d16525dc3e8/?ulp=http%3A%2F%2Fru.aliexpress.com%2Fwholesale%3FshipCountry%3Dru%26shipCompanies%3D%26enSearchText%3Desp8266%26enException%3D%26SearchText%3Desp8266%26exception%3D%26minPrice%3D%26maxPrice%3D%26minQuantity%3D%26maxQuantity%3D%26isFreeShip%3Dy%26isFavorite%3Dall%26isRtl%3Dyes%26isOnSale%3Dn%26isBigSale%3Dn%26isAtmOnline%3Dn%26CatId%3D0%26g%3Dy%26SortType%3Dprice_asc%26initiative_id%3DSB_20150119090128%26isPremium%3Dy%26filterCat%3D202001107%252C202000056%26groupsort%3D1%26needQuery%3Dn%26isUnitPrice%3D" target="_blank" rel="nofollow"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/aliexpress.jpg" title="Купить ESP8266" width="730" height="90" border="0"></a></center></div><div style="clear:both;"></div><div class="yarpp-related">
+<h2>Возможно, Вас также заинтересует:</h2><ol>
+<li><a href="http://esp8266.ru/esp8266ex-pinouts/" rel="bookmark" title="ESP8266EX Распиновка (pinouts) чипа">ESP8266EX Распиновка (pinouts) чипа </a><small>Кроме распиновки самого чипа ESP8266EX вы также можете посмотреть распиновку...</small></li>
+<li><a href="http://esp8266.ru/esp8266-sdk-1-0-1-and-datasheets/" rel="bookmark" title="ESP8266 – SDK 1.0.1, новая документация, WROOM и другие новости">ESP8266 – SDK 1.0.1, новая документация, WROOM и другие новости </a><small>В апреле Espressif выпустила новую версию SDK 1.0.1 в которой...</small></li>
+<li><a href="http://esp8266.ru/esp8266-esp-01-hacked/" rel="bookmark" title="Грязный хак модуля ESP8266 ESP-01 – дополнительно 4 GPIO">Грязный хак модуля ESP8266 ESP-01 – дополнительно 4 GPIO </a><small>Наш буржуинский коллега Dave Allan попробовал вытащить неразведенные GPIO из...</small></li>
+<li><a href="http://esp8266.ru/esp8266-podkluchenie-obnovlenie-proshivki/" rel="bookmark" title="ESP8266 – подключение и обновление прошивки">ESP8266 – подключение и обновление прошивки </a><small>ESP8266 – быстрый старт для начинающих Как проверить ESP8266 Как...</small></li>
+<li><a href="http://esp8266.ru/downloads/" rel="bookmark" title="Загрузить файлы документации, datasheet, прошивки, утилиты">Загрузить файлы документации, datasheet, прошивки, утилиты </a><small>Мы постарались собрать в одном месте всю доступную документацию, прошивки,...</small></li>
+</ol>
+</div>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			Запись опубликована <a href="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266.html" title="02:16" rel="bookmark"><time class="entry-date" datetime="2014-11-09T02:16:30+00:00">09.11.2014</time></a><span class="by-author"> автором <span class="author vcard"><a class="url fn n" href="http://esp8266.ru/author/victor/" title="Посмотреть все записи автора victor" rel="author">victor</a></span></span> в рубрике <a href="http://esp8266.ru/category/esp8266/esp8266-for-beginners/" rel="category tag">ESP8266 для начинающих</a>, <a href="http://esp8266.ru/category/esp8266/esp8266-hardware/" rel="category tag">ESP8266 и железные вопросы</a>, <a href="http://esp8266.ru/category/esp8266/" rel="category tag">Все о ESP8266</a> с метками <a href="http://esp8266.ru/tag/datasheet/" rel="tag">datasheet</a>, <a href="http://esp8266.ru/tag/esd-12/" rel="tag">ESD-12</a>, <a href="http://esp8266.ru/tag/esp-01/" rel="tag">ESP-01</a>, <a href="http://esp8266.ru/tag/esp-02/" rel="tag">ESP-02</a>, <a href="http://esp8266.ru/tag/esp-03/" rel="tag">ESP-03</a>, <a href="http://esp8266.ru/tag/esp-04/" rel="tag">ESP-04</a>, <a href="http://esp8266.ru/tag/esp-05/" rel="tag">ESP-05</a>, <a href="http://esp8266.ru/tag/esp-06/" rel="tag">ESP-06</a>, <a href="http://esp8266.ru/tag/esp-07/" rel="tag">ESP-07</a>, <a href="http://esp8266.ru/tag/esp-08/" rel="tag">ESP-08</a>, <a href="http://esp8266.ru/tag/esp-09/" rel="tag">ESP-09</a>, <a href="http://esp8266.ru/tag/esp-10/" rel="tag">ESP-10</a>, <a href="http://esp8266.ru/tag/esp-11/" rel="tag">ESP-11</a>, <a href="http://esp8266.ru/tag/esp-12/" rel="tag">ESP-12</a>, <a href="http://esp8266.ru/tag/esp-12-d/" rel="tag">ESP-12-D</a>, <a href="http://esp8266.ru/tag/esp-12-e/" rel="tag">ESP-12-E</a>, <a href="http://esp8266.ru/tag/esp-12-q/" rel="tag">ESP-12-Q</a>, <a href="http://esp8266.ru/tag/esp-12d/" rel="tag">ESP-12D</a>, <a href="http://esp8266.ru/tag/esp-12e/" rel="tag">ESP-12E</a>, <a href="http://esp8266.ru/tag/esp-12q/" rel="tag">ESP-12Q</a>, <a href="http://esp8266.ru/tag/esp-13/" rel="tag">ESP-13</a>, <a href="http://esp8266.ru/tag/esp8266-2/" rel="tag">esp8266</a>, <a href="http://esp8266.ru/tag/esp8266-datasheet/" rel="tag">esp8266 datasheet</a>, <a href="http://esp8266.ru/tag/espd-12/" rel="tag">ESPD-12</a>, <a href="http://esp8266.ru/tag/layouts/" rel="tag">layouts</a>, <a href="http://esp8266.ru/tag/pinouts/" rel="tag">pinouts</a>, <a href="http://esp8266.ru/tag/wroom/" rel="tag">WROOM</a>, <a href="http://esp8266.ru/tag/wroom-02/" rel="tag">WROOM-02</a>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Навигация по записям</h3>
+					<span class="nav-previous"><a href="http://esp8266.ru/downloads/" rel="prev"><span class="meta-nav">←</span> Загрузить файлы документации, datasheet, прошивки, утилиты</a></span>
+					<span class="nav-next"><a href="http://esp8266.ru/esp8266-appstack-esp8266-config/" rel="next">Конфигурирование ESP8266 с помощью AppStack ESP8266 Config <span class="meta-nav">→</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://esp8266.ru/">
+				<div>
+					<label class="screen-reader-text" for="s">Найти:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Поиск">
+				</div>
+			</form></aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Рубрики</h3>		<ul>
+	<li class="cat-item cat-item-100"><a href="http://esp8266.ru/category/esp8266/esplorer-info/">ESP8266 ESPlorer и другие</a>
+</li>
+	<li class="cat-item cat-item-99"><a href="http://esp8266.ru/category/esp8266/esp8266-sdk-at/">ESP8266 Espressif SDK, AT прошивки</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="http://esp8266.ru/category/esp8266/esp8266-for-beginners/">ESP8266 для начинающих</a>
+</li>
+	<li class="cat-item cat-item-105"><a href="http://esp8266.ru/category/esp8266/esp8266-%d0%b8-arduino-ide/">ESP8266 и Arduino IDE</a>
+</li>
+	<li class="cat-item cat-item-103"><a href="http://esp8266.ru/category/esp8266/frankenshtein/">ESP8266 и Frankenshtein</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="http://esp8266.ru/category/esp8266/micropython/">ESP8266 и MicroPython</a>
+</li>
+	<li class="cat-item cat-item-98"><a href="http://esp8266.ru/category/esp8266/nodemcu/">ESP8266 и NodeMCU</a>
+</li>
+	<li class="cat-item cat-item-139"><a href="http://esp8266.ru/category/esp8266/esp8266-%d0%b8-smart-js/">ESP8266 и smart-js</a>
+</li>
+	<li class="cat-item cat-item-104"><a href="http://esp8266.ru/category/esp8266/esp8266-hardware/">ESP8266 и железные вопросы</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://esp8266.ru/category/esp8266/" title="ESP8266, ESP8266 modules">Все о ESP8266</a>
+</li>
+		</ul>
+</aside><aside id="pages-2" class="widget widget_pages"><h3 class="widget-title">Справочная информация</h3>		<ul>
+			<li class="page_item page-item-443"><a href="http://esp8266.ru/esp8266-at-commands-v019/">ESP8266 AT команды v0.19</a></li>
+<li class="page_item page-item-669"><a href="http://esp8266.ru/esp8266-at-commands-v020/">ESP8266 AT команды v0.20</a></li>
+<li class="page_item page-item-695"><a href="http://esp8266.ru/esp8266-at-commands-v021/">ESP8266 AT команды v0.21</a></li>
+<li class="page_item page-item-835"><a href="http://esp8266.ru/esp8266-at-commands-v022/">ESP8266 AT команды v0.22</a></li>
+<li class="page_item page-item-369"><a href="http://esp8266.ru/esp8266-gpio-register/">ESP8266 GPIO – описание регистров</a></li>
+<li class="page_item page-item-379"><a href="http://esp8266.ru/esp8266-pin-register-strapping/">ESP8266 Pins list function, register, strapping</a></li>
+<li class="page_item page-item-507"><a href="http://esp8266.ru/esp8266-uart-reg/">ESP8266 UART REG</a></li>
+<li class="page_item page-item-592"><a href="http://esp8266.ru/esplorer/">ESPlorer</a></li>
+<li class="page_item page-item-1105"><a href="http://esp8266.ru/esp8266-sdk-v1-3-0-with-at-v0-40/">ESPRESSIF System released ESP IoT SDK v1.3.0 with AT v0.40 – Aug 8 2015</a></li>
+<li class="page_item page-item-1149"><a href="http://esp8266.ru/iotmanager/">IoT Manager</a></li>
+<li class="page_item page-item-756"><a href="http://esp8266.ru/kupit-esp8266/">Купить ESP8266</a></li>
+		</ul>
+		</aside><aside id="wpfb_filelistwidget-4" class="widget widget_wpfb_filelistwidget"><h3 class="widget-title">Новые файлы</h3><ul><li><a href="http://esp8266.ru/esp8266-sdk-v1-3-0-with-at-v0-40/#wpfb-file-94">4A-ESP8266  AT Instruction Set EN v0.40</a></li><li><a href="http://esp8266.ru/esp8266-sdk-v1-3-0-with-at-v0-40/#wpfb-file-93">ESP IoT SDK V1.3.0  AT v0.40 08.08.2015</a></li><li><a href="http://esp8266.ru/download/esp8266-doc/4A-ESP8266__AT%20Instruction%20Set__EN_v0.25.pdf">4A-ESP8266  AT Instruction Set  EN v0.25</a></li><li><a href="http://esp8266.ru/download/sdk/AT25-SDK112-512k.bin">AT v0.25 SDK 1.1.2 512k</a></li><li><a href="http://esp8266.ru/download/esp8266-firmware/esp_iot_sdk_v1.1.2_15_06_12.zip">ESP IoT SDK V1.1.2  AT v0.25 12.06.2015</a></li></ul></aside><aside id="wpfb_catlistwidget-2" class="widget widget_wpfb_catlistwidget"><h3 class="widget-title">Файлы</h3><ul><li><a href="http://esp8266.ru/downloads/sdk/#wpfb-cat-5">esp8266 SDK</a></li><li><a href="http://esp8266.ru/downloads/esp8266-doc/#wpfb-cat-1">esp8266 Документация</a><ul><li><a href="http://esp8266.ru/downloads/esp8266-doc/april-2015/#wpfb-cat-6">April-2015</a></li></ul></li><li><a href="http://esp8266.ru/downloads/esp8266-firmware/#wpfb-cat-2">esp8266 Прошивки</a></li><li><a href="http://esp8266.ru/downloads/esp8266-utils/#wpfb-cat-3">esp8266 Утилиты</a></li><li><a href="http://esp8266.ru/downloads/other/#wpfb-cat-4">esp8266 Разное</a></li></ul></aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">Облако тегов</h3><div class="tagcloud"><a href="http://esp8266.ru/tag/arduino-ide/" class="tag-link-107" title="3 записи" style="font-size: 11.414634146341pt;">arduino ide</a>
+<a href="http://esp8266.ru/tag/com-%d0%bf%d0%be%d1%80%d1%82/" class="tag-link-64" title="1 запись" style="font-size: 8pt;">COM порт</a>
+<a href="http://esp8266.ru/tag/datasheet/" class="tag-link-18" title="4 записи" style="font-size: 12.552845528455pt;">datasheet</a>
+<a href="http://esp8266.ru/tag/esp-01/" class="tag-link-19" title="2 записи" style="font-size: 10.048780487805pt;">ESP-01</a>
+<a href="http://esp8266.ru/tag/esp-02/" class="tag-link-20" title="1 запись" style="font-size: 8pt;">ESP-02</a>
+<a href="http://esp8266.ru/tag/esp-03/" class="tag-link-21" title="1 запись" style="font-size: 8pt;">ESP-03</a>
+<a href="http://esp8266.ru/tag/esp-04/" class="tag-link-22" title="1 запись" style="font-size: 8pt;">ESP-04</a>
+<a href="http://esp8266.ru/tag/esp-05/" class="tag-link-23" title="1 запись" style="font-size: 8pt;">ESP-05</a>
+<a href="http://esp8266.ru/tag/esp-06/" class="tag-link-24" title="1 запись" style="font-size: 8pt;">ESP-06</a>
+<a href="http://esp8266.ru/tag/esp-07/" class="tag-link-25" title="1 запись" style="font-size: 8pt;">ESP-07</a>
+<a href="http://esp8266.ru/tag/esp-08/" class="tag-link-26" title="1 запись" style="font-size: 8pt;">ESP-08</a>
+<a href="http://esp8266.ru/tag/esp-09/" class="tag-link-162" title="1 запись" style="font-size: 8pt;">ESP-09</a>
+<a href="http://esp8266.ru/tag/esp-10/" class="tag-link-164" title="1 запись" style="font-size: 8pt;">ESP-10</a>
+<a href="http://esp8266.ru/tag/esp-11/" class="tag-link-175" title="1 запись" style="font-size: 8pt;">ESP-11</a>
+<a href="http://esp8266.ru/tag/esp-12/" class="tag-link-182" title="2 записи" style="font-size: 10.048780487805pt;">ESP-12</a>
+<a href="http://esp8266.ru/tag/esp8266-2/" class="tag-link-9" title="33 записи" style="font-size: 22pt;">esp8266</a>
+<a href="http://esp8266.ru/tag/esp8266-addon/" class="tag-link-73" title="1 запись" style="font-size: 8pt;">ESP8266 addon</a>
+<a href="http://esp8266.ru/tag/esp8266-at-commands/" class="tag-link-61" title="11 записей" style="font-size: 16.878048780488pt;">esp8266 AT commands</a>
+<a href="http://esp8266.ru/tag/esp8266-at-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d1%8b/" class="tag-link-59" title="11 записей" style="font-size: 16.878048780488pt;">ESP8266 AT команды</a>
+<a href="http://esp8266.ru/tag/esp8266-bugs/" class="tag-link-58" title="1 запись" style="font-size: 8pt;">ESP8266 bugs</a>
+<a href="http://esp8266.ru/tag/esp8266-busy-2/" class="tag-link-60" title="1 запись" style="font-size: 8pt;">ESP8266 busy</a>
+<a href="http://esp8266.ru/tag/esp8266-datasheet/" class="tag-link-29" title="6 записей" style="font-size: 14.260162601626pt;">esp8266 datasheet</a>
+<a href="http://esp8266.ru/tag/esp8266-firmware-3/" class="tag-link-62" title="13 записей" style="font-size: 17.674796747967pt;">ESP8266 firmware</a>
+<a href="http://esp8266.ru/tag/esp8266-gpio/" class="tag-link-52" title="1 запись" style="font-size: 8pt;">ESP8266 GPIO</a>
+<a href="http://esp8266.ru/tag/esp8266-hack-2/" class="tag-link-71" title="1 запись" style="font-size: 8pt;">ESP8266 hack</a>
+<a href="http://esp8266.ru/tag/esp8266-micropython/" class="tag-link-84" title="1 запись" style="font-size: 8pt;">ESP8266 MicroPython</a>
+<a href="http://esp8266.ru/tag/esp8266-mod/" class="tag-link-72" title="1 запись" style="font-size: 8pt;">ESP8266 mod</a>
+<a href="http://esp8266.ru/tag/esp8266-register/" class="tag-link-53" title="1 запись" style="font-size: 8pt;">ESP8266 register</a>
+<a href="http://esp8266.ru/tag/esp8266-sdk-2/" class="tag-link-68" title="5 записей" style="font-size: 13.463414634146pt;">ESP8266 SDK</a>
+<a href="http://esp8266.ru/tag/esp8266-%d0%ba%d1%83%d0%bf%d0%b8%d1%82%d1%8c/" class="tag-link-50" title="4 записи" style="font-size: 12.552845528455pt;">ESP8266 купить</a>
+<a href="http://esp8266.ru/tag/esp8266-%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0/" class="tag-link-81" title="3 записи" style="font-size: 11.414634146341pt;">ESP8266 прошивка</a>
+<a href="http://esp8266.ru/tag/esp8266-%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d1%8b/" class="tag-link-54" title="1 запись" style="font-size: 8pt;">ESP8266 регистры</a>
+<a href="http://esp8266.ru/tag/esp8266ex/" class="tag-link-8" title="2 записи" style="font-size: 10.048780487805pt;">esp8266ex</a>
+<a href="http://esp8266.ru/tag/esplorer/" class="tag-link-90" title="4 записи" style="font-size: 12.552845528455pt;">ESPlorer</a>
+<a href="http://esp8266.ru/tag/firmware/" class="tag-link-16" title="1 запись" style="font-size: 8pt;">firmware</a>
+<a href="http://esp8266.ru/tag/freertos/" class="tag-link-82" title="1 запись" style="font-size: 8pt;">FreeRTOS</a>
+<a href="http://esp8266.ru/tag/image/" class="tag-link-15" title="1 запись" style="font-size: 8pt;">image</a>
+<a href="http://esp8266.ru/tag/layouts/" class="tag-link-11" title="2 записи" style="font-size: 10.048780487805pt;">layouts</a>
+<a href="http://esp8266.ru/tag/micropython/" class="tag-link-83" title="1 запись" style="font-size: 8pt;">MicroPython</a>
+<a href="http://esp8266.ru/tag/nodemcu/" class="tag-link-67" title="4 записи" style="font-size: 12.552845528455pt;">NodeMcu</a>
+<a href="http://esp8266.ru/tag/pinouts/" class="tag-link-10" title="2 записи" style="font-size: 10.048780487805pt;">pinouts</a>
+<a href="http://esp8266.ru/tag/slip/" class="tag-link-14" title="1 запись" style="font-size: 8pt;">SLIP</a>
+<a href="http://esp8266.ru/tag/%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/" class="tag-link-13" title="1 запись" style="font-size: 8pt;">конфигурирование</a>
+<a href="http://esp8266.ru/tag/%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0/" class="tag-link-12" title="1 запись" style="font-size: 8pt;">настройка</a>
+<a href="http://esp8266.ru/tag/%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0/" class="tag-link-17" title="1 запись" style="font-size: 8pt;">прошивка</a></div>
+</aside><aside id="ngg-images-2" class="widget ngg_images"><div class="hslice" id="ngg-webslice"><h3 class="entry-title widget-title">ESP8266 модули</h3><div class="ngg-widget entry-content">
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-01.jpg" title="ESP8266 ESP-01" data-image-id="47" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-01" alt="ESP8266 ESP-01" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-01.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-03.jpg" title="ESP8266 ESP-03" data-image-id="52" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-03" alt="ESP8266 ESP-03" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-03.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-04.jpg" title="ESP8266 ESP-04" data-image-id="54" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-04" alt="ESP8266 ESP-04" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-04.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-05.jpg" title="ESP8266 ESP-05" data-image-id="56" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-05" alt="ESP8266 ESP-05" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-05.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-06.jpg" title="ESP8266 ESP-06" data-image-id="58" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-06" alt="ESP8266 ESP-06" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-06.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-07.jpg" title="ESP8266 ESP-07" data-image-id="60" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-07" alt="ESP8266 ESP-07" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-07.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-09.jpg" title="ESP8266 ESP-09" data-image-id="64" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-09" alt="ESP8266 ESP-09" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-09.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_ESP-11.jpg" title="ESP8266 ESP-11" data-image-id="68" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-11" alt="ESP8266 ESP-11" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_ESP-11.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/ESP8266_esp-12.jpg" title="ESP8266 ESP-12" data-image-id="70" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-12" alt="ESP8266 ESP-12" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_ESP8266_esp-12.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/wroom.jpg" title="ESP8266 WROOM" data-image-id="71" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 WROOM" alt="ESP8266 WROOM" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_wroom.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/esp-12-e-1.jpg" title="ESP8266 ESP-12-E" data-image-id="76" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-12-E" alt="ESP8266 ESP-12-E" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_esp-12-e-1.jpg" width="100" height="75"></a>
+            <a href="http://esp8266.ru/wp-content/images/esp8266-modules/esp-13-2.jpg" title="ESP8266 ESP-13" data-image-id="77" class="ngg-fancybox" rel="b6435aeb83ed3047b06f70d7a709263d"><img title="ESP8266 ESP-13" alt="ESP8266 ESP-13" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/thumbs_esp-13-2.jpg" width="100" height="75"></a>
+    </div>
+
+</div></aside><aside id="facebook-likebox-2" class="widget widget_facebook_likebox"><h3 class="widget-title"><a href="https://www.facebook.com/esp8266">Facebook</a></h3>		<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_http" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wjDNIDNrTQG.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_https" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wjDNIDNrTQG(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f78397324" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ping.html" style="display: none;"></iframe></div></div></div>
+		<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/esp8266" data-height="150" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=249643311490&amp;container_width=250&amp;height=150&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fesp8266&amp;locale=ru_RU&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false"><span style="vertical-align: bottom; width: 250px; height: 150px;"><iframe name="f3f337d8e4" width="1000px" height="150px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/page.html" style="border: none; visibility: visible; width: 250px; height: 150px;" class=""></iframe></span></div>
+		<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = '//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=249643311490&version=v2.3'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+		</aside><aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h3 class="widget-title">Twitter</h3><a class="twitter-timeline" data-widget-id="532184984480542722" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="3" width="200" height="400" lang="RU">Мои твиты</a></aside><aside id="text-2" class="widget widget_text">			<div class="textwidget"><div id="sb_instagram" class="sbi sbi_fixed_height  sbi_col_4" style="width: 100%; height: 250px; padding-bottom: 0px;" data-id="1807243259" data-num="20" data-res="auto" data-cols="4" data-options="{&quot;sortby&quot;: &quot;none&quot;, &quot;headercolor&quot;: &quot;&quot;}"><div class="sb_instagram_header" style="padding: 10px; padding-bottom: 0;"><a href="http://instagram.com/esp8266ru" target="_blank" title="@esp8266ru" class="sbi_header_link"><div class="sbi_header_text"><h3 class="sbi_no_bio">@esp8266ru</h3></div><div class="sbi_header_img"><div class="sbi_header_img_hover"><i class="fa fa-instagram"></i></div><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/11906329_960233084022564_1448528159_a.jpg" alt="esp8266ru" width="50" height="50"></div></a></div><div id="sbi_images" style="padding: 5px;"><div class="sbi_item sbi_type_image" id="sbi_1094308304050647841_1807243259" data-date="1444671737000"><div class="sbi_photo_wrap"><a class="sbi_photo" href="https://instagram.com/p/8vw5rJsvMh/" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/11374203_951861464879425_886250426_n.jpg" alt="IoT Manager"></a></div></div><div class="sbi_item sbi_type_image" id="sbi_1000533717731701202_1807243259" data-date="1433492935000"><div class="sbi_photo_wrap"><a class="sbi_photo" href="https://instagram.com/p/3inB1_MvHS/" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/11376306_410043979167479_885793699_n.jpg" alt="Gl.iNET c OpenWRT"></a></div></div><div class="sbi_item sbi_type_image" id="sbi_999343810187292859_1807243259" data-date="1433351087000"><div class="sbi_photo_wrap"><a class="sbi_photo" href="https://instagram.com/p/3eYeaOsvC7/" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/11325123_727428190712767_67988352_n.jpg" alt=""></a></div></div><div class="sbi_item sbi_type_image" id="sbi_961551238350172599_1807243259" data-date="1428845861000"><div class="sbi_photo_wrap"><a class="sbi_photo" href="https://instagram.com/p/1YHcG7MvG3/" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/11085083_883624011699109_1282740342_n.jpg" alt=""></a></div></div><div class="sbi_item sbi_type_image" id="sbi_961549242129903991_1807243259" data-date="1428845623000"><div class="sbi_photo_wrap"><a class="sbi_photo" href="https://instagram.com/p/1YG_DzMvF3/" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/11137581_445547965607788_1062225643_n.jpg" alt="Адаптер"></a></div></div></div><div id="sbi_load"><a class="sbi_load_btn" href="javascript:void(0);" style="display: none;">Еще фото...</a><div class="sbi_follow_btn"><a href="http://instagram.com/esp8266ru" style="" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></div></div></div></div>
+		</aside><aside id="rss_links-2" class="widget widget_rss_links"><p><a target="_self" href="http://esp8266.ru/feed/" title="Подписаться на Записи"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/orange-small.png" alt="RSS Feed"></a></p>
+</aside>		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+<div style="float:right;">
+<noindex>
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#39;https://feedburner.google.com/fb/a/mailverify?uri=esp8266&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"></p><input type="hidden" value="esp8266" name="uri"><input type="hidden" name="loc" value="ru_RU"><input type="submit" value="Subscribe"><p>Delivered by <a href="https://feedburner.google.com/" target="_blank">FeedBurner</a></p></form>
+<a href="http://feeds.feedburner.com/esp8266" rel="alternate" type="application/rss+xml" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/rss.png" alt="����������� �� esp8266 ����� FeedBurner.com" title="����������� �� esp8266 ����� FeedBurner.com"></a>
+<a href="https://feedburner.google.com/fb/a/mailverify?uri=esp8266&loc=ru_RU" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/email.png" alt="����������� �� esp8266 �� ����������� ����� ����� FeedBurner.com" title="����������� �� esp8266 �� ����������� ����� ����� FeedBurner.com"></a>
+<a href="http://vk.com/esp8266" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/vk.png" alt="������ esp8266 ���������" title="������ esp8266 ���������"></a>
+<a href="http://ok.ru/group/52418726723769" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ok.png" alt="������ esp8266 �� ��������������" title="������ esp8266 �� ��������������"></a>
+<a href="https://www.facebook.com/esp8266" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/fb.png" alt="�������� esp8266 � Facebook" title="�������� esp8266 � Facebook"></a>
+<a href="https://twitter.com/esp8266ru" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/twitter.png" alt="esp8266 Twitter �������" title="esp8266 Twitter �������"></a>
+<a href="https://plus.google.com/+Esp8266Ru-wifi/posts" rel="publisher" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/googleplus.png" alt="�������� esp8266 � Google+" title="�������� esp8266 � Google+"></a>
+<a href="https://www.youtube.com/user/esp8266" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/youtube.png" alt="����� esp8266 �� YouTube" title="����� esp8266 �� YouTube"></a>
+<a href="https://www.linkedin.com/groups/esp8266-8202267" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/linkedin.png" alt="������ esp8266 LinkedIn" title="������ esp8266 LinkedIn"></a>
+<p>
+<a href="http://feedly.com/#subscription/feed/http://feeds.feedburner.com/esp8266" title="esp8266" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/feedly.png" alt="������������ ����� Feedly" style="border:0; float:left;"></a>
+<a href="http://feeds.feedburner.com/esp8266" target="_blank"><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/esp8266" height="26" width="88" style="border:0" alt=""></a>
+</p>
+<a href="http://www.pinterest.com/esp8266/" target="_blank">Pinterest.com</a>
+</noindex>
+</div>
+<div class="site-info">© 2014-2015 esp8266.ru</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter26992140 = new Ya.Metrika({id:26992140,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/26992140" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- ngg_resource_manager_marker --><script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/photon.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/core.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/widget.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/mouse.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/draggable.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/chat.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sb_instagram_js_options = {"sb_instagram_at":"1807243259.97584da.6746dcbe431a4a3489b5ea8014f31553"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/sb-instagram.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/pretty.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"1","loopImages":"","resizeCenter":"","marginSize":"0","linkTarget":"","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","jqlb_overlay_opacity":"80","jqlb_overlay_color":"#000000","jqlb_overlay_close":"1","jqlb_border_width":"10","jqlb_border_color":"#ffffff","jqlb_border_radius":"0","jqlb_image_info_background_transparency":"100","jqlb_image_info_bg_color":"#ffffff","jqlb_image_info_text_color":"#000000","jqlb_image_info_text_fontsize":"10","jqlb_show_text_for_image":"1","jqlb_next_image_title":"next image","jqlb_previous_image_title":"previous image","jqlb_next_button_image":"http:\/\/esp8266.ru\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/next.gif","jqlb_previous_button_image":"http:\/\/esp8266.ru\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/prev.gif","jqlb_maximum_width":"","jqlb_maximum_height":"","jqlb_show_close_button":"1","jqlb_close_image_title":"close image gallery","jqlb_close_image_max_heght":"22","jqlb_image_for_close_lightbox":"http:\/\/esp8266.ru\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/closelabel.gif","jqlb_keyboard_navigation":"1","jqlb_popup_size_fix":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/wp-lightbox-2.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/navigation.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var photocrati_ajax = {"url":"http:\/\/esp8266.ru\/?photocrati_ajax=1","wp_home_url":"http:\/\/esp8266.ru","wp_site_url":"http:\/\/esp8266.ru","wp_root_url":"http:\/\/esp8266.ru","wp_plugins_url":"http:\/\/esp8266.ru\/wp-content\/plugins","wp_content_url":"http:\/\/esp8266.ru\/wp-content","wp_includes_url":"http:\/\/esp8266.ru\/wp-includes\/","ngg_param_slug":"gallery"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ajax.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+var galleries = {};
+galleries.gallery_b6435aeb83ed3047b06f70d7a709263d = {"id":null,"source":"random_images","container_ids":["3"],"gallery_ids":[],"album_ids":[],"tag_ids":[],"display_type":"photocrati-nextgen_basic_thumbnails","exclusions":[],"order_by":"sortorder","order_direction":"ASC","image_ids":[],"entity_ids":[],"tagcloud":false,"inner_content":null,"returns":"included","slug":"widget-ngg-images-2","display_settings":{"override_thumbnail_settings":"0","thumbnail_width":"120","thumbnail_height":"90","thumbnail_crop":"1","images_per_page":12,"number_of_columns":"0","ajax_pagination":"1","show_all_in_lightbox":false,"use_imagebrowser_effect":false,"show_piclens_link":"1","piclens_link_text":"[Show PicLens]","show_slideshow_link":false,"slideshow_link_text":"[Show slideshow]","template":"\/var\/www\/main\/data\/www\/esp8266.ru\/wp-content\/plugins\/nextgen-gallery\/products\/photocrati_nextgen\/modules\/widget\/templates\/display_gallery.php","use_lightbox_effect":true,"display_no_images_error":1,"disable_pagination":true,"thumbnail_quality":"100","thumbnail_watermark":0,"ngg_triggers_display":"never","maximum_entity_count":12,"image_type":"thumb","show_thumbnail_link":false,"image_width":100,"image_height":75,"widget_setting_title":"ESP8266 \u043c\u043e\u0434\u0443\u043b\u0438","widget_setting_before_widget":"<aside id=\"ngg-images-2\" class=\"widget ngg_images\"><div class=\"hslice\" id=\"ngg-webslice\">","widget_setting_before_title":"<h3 class=\"entry-title widget-title\">","widget_setting_after_widget":"<\/div><\/aside>","widget_setting_after_title":"<\/h3>","widget_setting_width":100,"widget_setting_height":75,"widget_setting_show_setting":"thumbnail","widget_setting_widget_id":"ngg-images-2"},"excluded_container_ids":[],"sortorder":[],"maximum_entity_count":12,"__defaults_set":true,"variation":3,"_errors":[],"ID":"b6435aeb83ed3047b06f70d7a709263d"};
+galleries.gallery_b6435aeb83ed3047b06f70d7a709263d.wordpress_page_root = "http:\/\/esp8266.ru\/modules-esp8266\/";
+var nextgen_lightbox_settings = {"static_path":"http:\/\/esp8266.ru\/wp-content\/plugins\/nextgen-gallery\/products\/photocrati_nextgen\/modules\/lightbox\/static","context":"nextgen_images"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/common.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/nextgen_basic_thumbnails.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/lightbox_context.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/nextgen_fancybox_init.min.js"></script>
+<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/ajax_pagination.min.js"></script>
+<div id="lessbuttons_holder" class="lessbuttons_com_slider"><div class="lessbuttons_com_slider_internal">    <div class="lessbuttons_com_button" style="background-color: #4B6DAA;" title="Facebook" onclick="lessbuttons_com_popup (&#39;facebook&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="0 0 512 512">
+            <path fill="#FFFFFF" d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83
+                    V256h56.4l7.6-64H288z"></path></svg>
+            </div>
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_facebook">1</span>
+        </div>
+    </div>
+    <div class="lessbuttons_com_button" style="background-color: #3AACDE;" title="Twitter" onclick="lessbuttons_com_popup (&#39;twitter&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="0 0 32 32">
+            <path fill="#FFFFFF" d="M29,7.934c-0.952,0.423-1.984,0.715-3.061,0.84c1.1-0.664,1.948-1.701,2.343-2.946c-1.029,0.603-2.171,1.053-3.384,1.291
+                    c-0.972-1.037-2.362-1.683-3.895-1.683c-2.949,0-5.335,2.386-5.335,5.333c0,0.419,0.047,0.823,0.136,1.21
+                    c-4.43-0.217-8.363-2.339-10.995-5.566c-0.455,0.783-0.72,1.698-0.72,2.677c0,1.856,0.942,3.485,2.37,4.445
+                    c-0.868-0.027-1.696-0.269-2.415-0.667v0.068c0,2.579,1.84,4.736,4.278,5.228c-0.448,0.12-0.918,0.186-1.403,0.186
+                    c-0.342,0-0.678-0.024-1.006-0.096c0.678,2.121,2.651,3.661,4.984,3.703c-1.824,1.429-4.124,2.292-6.625,2.292
+                    c-0.43,0-0.858-0.028-1.273-0.083c2.36,1.518,5.164,2.399,8.179,2.399c9.812,0,15.182-8.133,15.182-15.178
+                    c0-0.227-0.014-0.461-0.018-0.696C27.381,9.95,28.283,9.001,29,7.934z"></path>
+            </svg>
+            </div>        
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_twitter">1</span>
+            <div class="lessbuttons_com_find_shares" title="Find Shares" onclick="return lessbuttons_find_shares (&#39;twitter&#39;);"></div>
+        </div>​
+    </div>
+        <div class="lessbuttons_com_button lessbuttons_com_button_white" style="background-color: #FFFFFF;" title="Google+" onclick="lessbuttons_com_popup (&#39;googleplus&#39;);">
+            <div class="lessbuttons_com_holder">
+                <iframe scrolling="no" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" class="lessbuttons_com_frame" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/fastbutton.html"></iframe>
+                <div class="lessbuttons_com_socimg" style="background: none;">
+                <svg height="100%" viewBox="0 0 512 512">
+                <polygon fill="#FFFFFF" points="0,0 511,0 511,511 0,511"></polygon>
+                        <path fill="#CC222D" d="M462,141.347h-54.621v54.622h-27.311v-54.622h-54.622v-27.311h54.622V59.416h27.311v54.621H462V141.347z M307.583,367.26
+                                c0,40.943-37.384,90.787-131.434,90.787C107.365,458.047,50,428.379,50,378.478c0-38.514,24.383-88.511,138.323-88.511
+                                c-16.922-13.792-21.075-33.077-10.733-53.959c-66.714,0-100.879-39.222-100.879-89.023c0-48.731,36.242-93.032,110.15-93.032
+                                c18.66,0,118.398,0,118.398,0l-26.457,27.77h-31.079c21.925,12.562,33.586,38.433,33.586,66.949
+                                c0,26.175-14.413,47.375-34.983,63.279c-36.503,28.222-27.158,43.98,11.087,71.872C295.121,312.074,307.583,333.882,307.583,367.26
+                                z M233.738,150.453c-5.506-41.905-32.806-76.284-64.704-77.243c-31.909-0.949-53.309,31.119-47.798,73.035
+                                c5.509,41.905,35.834,71.178,67.749,72.139C220.882,219.333,239.242,192.363,233.738,150.453z M266.631,371.463
+                                c0-34.466-31.441-67.317-84.192-67.317c-47.542-0.523-87.832,30.042-87.832,65.471c0,36.154,34.335,66.25,81.879,66.25
+                                C237.267,435.866,266.631,407.617,266.631,371.463z"></path>
+                </svg>        
+                </div>
+                <div class="lessbuttons_com_cover" onclick="lessbuttons_com_popup (&#39;googleplus&#39;);"></div>
+                <div class="lessbuttons_com_find_shares" title="Find Shares" onclick="return lessbuttons_find_shares (&#39;googleplus&#39;);"></div>
+            </div>​
+        </div>
+    <div class="lessbuttons_com_button" style="background-color: #017FB1;" title="LinkedIn" onclick="lessbuttons_com_popup (&#39;linkedin&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="0 0 32 32">
+            <path fill="#FFFFFF" d="M9.803,26.506V12.432H5.126v14.074H9.803z M7.463,10.51c1.631,0,2.646-1.08,2.646-2.432
+                            C10.08,6.7,9.093,5.646,7.494,5.646c-1.6,0-2.645,1.054-2.645,2.433c0,1.353,1.016,2.432,2.586,2.432L7.463,10.51L7.463,10.51z
+                             M12.393,26.506h4.678v-7.859c0-0.42,0.029-0.84,0.154-1.143c0.338-0.839,1.104-1.708,2.395-1.708c1.691,0,2.369,1.291,2.369,3.181
+                            v7.529h4.678v-8.068c0-4.322-2.311-6.332-5.385-6.332c-2.523,0-3.635,1.41-4.248,2.371h0.029v-2.041h-4.674
+                            C12.453,13.752,12.393,26.506,12.393,26.506L12.393,26.506z"></path>
+            </svg>
+            </div>
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_linkedin"></span>
+        </div>
+    </div>
+    <div class="lessbuttons_com_button" style="background-color: #CC222D;" title="Pinterest" onclick="lessbuttons_com_popup (&#39;pinterest&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="-50 -50 612 612">
+            <path fill="#FFFFFF" d="M265.653,50C153.22,50,96.526,130.612,96.526,197.833c0,40.702,15.411,76.914,48.462,90.41
+                    c5.418,2.215,10.275,0.077,11.846-5.924c1.093-4.153,3.681-14.631,4.835-18.991c1.584-5.936,0.97-8.018-3.403-13.191
+                    c-9.53-11.242-15.621-25.795-15.621-46.408c0-59.806,44.746-113.343,116.515-113.343c63.549,0,98.465,38.831,98.465,90.69
+                    c0,68.234-30.198,125.824-75.026,125.824c-24.759,0-43.29-20.475-37.351-45.585c7.115-29.981,20.894-62.334,20.894-83.975
+                    c0-19.37-10.398-35.527-31.918-35.527c-25.308,0-45.639,26.182-45.639,61.254c0,22.337,7.549,37.446,7.549,37.446
+                    s-25.898,109.737-30.439,128.954c-9.043,38.273-1.361,85.193-0.708,89.931c0.38,2.809,3.989,3.476,5.621,1.354
+                    c2.335-3.047,32.479-40.26,42.726-77.441c2.9-10.528,16.648-65.049,16.648-65.049c8.221,15.683,32.251,29.497,57.805,29.497
+                    c76.075,0,127.688-69.354,127.688-162.187C415.474,115.374,356.018,50,265.653,50z"></path>
+            </svg>
+            </div>
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_pinterest">4</span>
+        </div>
+    </div>
+    <div class="lessbuttons_com_button" style="background-color: #6099d0;" title="Reddit" onclick="lessbuttons_com_popup (&#39;reddit&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="-50 -50 612 612">
+            <path fill="#FFFFFF" d="M480.5,251c0-27.7-22.2-50.2-49.5-50.2c-13,0-24.7,5-33.6,13.3c-32.4-22.8-76.1-37.8-124.9-40.6l21.9-73.2l67.1,13.5
+                    c2.3,22.7,21.2,40.4,44.3,40.4c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0c24.6,0,44.5-20.2,44.5-45.1S430.7,64,406.1,64
+                    c-0.1,0-0.1,0-0.2,0c0,0-0.1,0-0.1,0c-17.2,0-32,9.8-39.5,24.3l-89.7-18l-30.8,103l-2.5,0.1c-50.3,2.2-95.5,17.4-128.7,40.7
+                    c-8.8-8.3-20.6-13.3-33.6-13.3c-27.3,0-49.5,22.5-49.5,50.2c0,19.6,11,36.5,27.1,44.8c-0.8,4.9-1.2,9.8-1.2,14.8
+                    C57.5,386.4,146.4,448,256,448s198.5-61.6,198.5-137.5c0-5-0.4-9.9-1.1-14.8C469.5,287.4,480.5,270.5,480.5,251z M65.8,271.1
+                    c-6.6-4.5-10.9-12.1-10.9-20.8c0-13.8,11.1-25.1,24.7-25.1c5.6,0,10.8,1.9,15,5.1C81.1,242.2,71.1,256,65.8,271.1z M389.3,109.1
+                    c0-9.2,7.4-16.8,16.5-16.8s16.5,7.5,16.5,16.8c0,9.2-7.4,16.8-16.5,16.8S389.3,118.4,389.3,109.1z M158.5,288.4
+                    c0-17.6,14.2-31.8,31.8-31.8s31.8,14.2,31.8,31.8c0,17.6-14.2,31.8-31.8,31.8S158.5,306,158.5,288.4z M256,400
+                    c-47.6-0.2-76-28.5-77.2-29.7l12.6-12.4c0.2,0.2,23.7,24.2,64.6,24.4c40.3-0.2,64.2-24.2,64.5-24.4l12.6,12.4
+                    C331.9,371.5,303.6,399.8,256,400z M322.3,320.2c-17.6,0-31.8-14.2-31.8-31.8c0-17.6,14.2-31.8,31.8-31.8s31.8,14.2,31.8,31.8
+                    C354.1,306,339.8,320.2,322.3,320.2z M446.4,271.5c-5.4-15.3-15.6-29.4-29.3-41.4c4.2-3.3,9.5-5.2,15.2-5.2
+                    c13.9,0,25.1,11.4,25.1,25.5C457.5,259.2,453.1,266.9,446.4,271.5z"></path>
+            </svg>
+            </div>
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_reddit"></span>
+        </div>
+    </div>
+    <div class="lessbuttons_com_button" style="background-color: #44688C;" title="VKontakte" onclick="lessbuttons_com_popup (&#39;vkontakte&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="0 0 512 512">
+            <path fill="#FFFFFF" d="M275.945,373.711c10.448,0,14.737-6.977,14.599-15.707
+                    c-0.533-32.912,12.26-50.619,35.345-27.531c25.555,25.553,30.838,43.238,61.851,43.238c11.798,0,43.484,0,54.937,0
+                    c43.218,0,4.705-43.371-25.742-71.629c-28.948-26.87-30.307-27.504-5.379-59.847c30.951-40.14,71.393-91.858,35.608-91.858
+                    c-7.005,0-2.006,0-68.347,0c-13.261,0-14.217,7.748-18.928,18.87c-17.07,40.279-49.538,92.471-61.873,84.501
+                    c-12.9-8.337-6.993-36.612-6.004-85.617c0.261-12.942,0.195-21.833-19.586-26.424c-54.009-12.535-100.81,12.122-81.692,15.682
+                    c26.963,5.028,24.377,58.695,18.088,83.89c-10.951,43.87-52.114-34.752-69.274-73.896c-4.128-9.419-5.39-17.006-20.165-17.006
+                    c-8.102,0-43.862,0-55.881,0c-10.773,0-16.055,4.934-12.294,14.939c3.761,10.005,46.999,106.727,98.119,161.909
+                    C196.64,378.297,243.405,373.711,275.945,373.711z"></path>
+            </svg>
+            </div>
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_vkontakte">1</span>
+            <div class="lessbuttons_com_find_shares" title="Find Shares" onclick="return lessbuttons_find_shares (&#39;vkontakte&#39;);"></div>
+        </div>
+    </div>
+    <div class="lessbuttons_com_button" style="background-color: #F48222;" title="Odnoklassniki" onclick="lessbuttons_com_popup (&#39;odnoklassniki&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_socimg" style="background: none;">
+            <svg height="100%" viewBox="0 0 32 32">
+            <path fill="#FFFFFF" d="M15.98,16.167c-3.033,0-5.5-2.468-5.5-5.5c0-3.033,2.467-5.501,5.5-5.501s5.501,2.468,5.501,5.501
+                    C21.481,13.7,19.014,16.167,15.98,16.167z M15.98,8.273c-1.32,0-2.394,1.073-2.394,2.395c0,1.32,1.073,2.394,2.394,2.394
+                    c1.319,0,2.395-1.074,2.395-2.394C18.375,9.347,17.3,8.273,15.98,8.273z M18.109,20.587c1.052-0.227,2.148-0.652,3.25-1.372
+                    c0.718-0.468,0.921-1.431,0.451-2.148c-0.469-0.718-1.43-0.921-2.149-0.452c-3.619,2.364-7.264,0.103-7.432-0.004
+                    c-0.718-0.464-1.677-0.261-2.144,0.456c-0.469,0.718-0.268,1.681,0.451,2.148c0.11,0.073,1.483,0.946,3.495,1.363l-3.228,3.228
+                    c-0.605,0.607-0.605,1.591,0,2.196c0.304,0.304,0.701,0.455,1.099,0.455s0.795-0.151,1.099-0.455l3.065-3.065l3.012,3.013
+                    c0.605,0.605,1.589,0.605,2.196,0c0.606-0.607,0.606-1.591,0-2.198L18.109,20.587z"></path>
+            </svg>
+            </div>
+            <span class="lessbuttons_com_button_text" id="lessbuttons_com_count_odnoklassniki">1</span>
+        </div>
+    </div>
+    <div class="lessbuttons_com_otherbutton" style="background-color: #3e89c5;" title="Email" onclick="lessbuttons_com_popup (&#39;email&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_othersocimg" style="background: none;">
+            <svg height="100%" viewBox="377 235 100 100">
+            <polygon fill="#FFFFFF" points="427.068,292.141 391.088,268.14 391.088,258.08 463.068,258.08 463.068,268.14 	"></polygon>
+	<polygon fill="#FFFFFF" points="427.068,296.939 437.868,289.739 463.068,313.037 391.088,313.037 416.269,289.739 	"></polygon>
+	<polygon fill="#FFFFFF" points="391.088,272.939 391.088,307.739 412.669,287.339 	"></polygon>
+	<polygon fill="#FFFFFF" points="463.068,272.939 463.068,307.739 441.469,287.339 	"></polygon>
+            </svg>
+            </div>
+        </div>
+    </div>
+    <div class="lessbuttons_com_otherbutton" style="background-color: #E04C40;" title="Gmail" onclick="lessbuttons_com_popup (&#39;gmail&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_othersocimg" style="background: none;">
+            <svg height="100%" viewBox="-50 -50 612 612">
+            <path fill="#FFFFFF" d="M256.017,273.436L50.847,103.407h410.904L256.017,273.436z M255.983,328.898L50,158.244v250.349h412
+                    V158.653L255.983,328.898z"></path>
+            </svg>
+            </div>
+        </div>
+    </div>
+<div class="lessbuttons_com_otherbutton" style="background-color: #2164AD;" onclick="lessbuttons_com_popup (&#39;mailru&#39;);" title="MoiMir">
+<div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_othersocimg" style="background-position: 0 -480px;"></div>
+        </div>
+</div>
+    <div class="lessbuttons_com_otherbutton" style="background-color: #FF4C1D;" title="Blogger" onclick="lessbuttons_com_popup (&#39;blogger&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_othersocimg" style="background: none;">
+            <svg height="100%" viewBox="-15 -15 130 130">
+            <path fill="#FFFFFF" d="M99,41.125C99.002,38.031,93.741,38,93.741,38h-5.704C83.692,38,82,34.729,82,32.845V30.52
+                    C82,13.47,68.102,2,50.543,2H33.895C16.341,2,2,13.47,2,30.52v33.819C2,81.389,16.341,98,33.895,98h16.649
+                    c0.139,0,0.276-0.009,0.415-0.012L50.954,98h23.594C99.743,93,99,69.54,99,69.54V41.125z M32.376,26h23.19
+                    c2.637,0,4.777,2.933,4.777,6c0,3.066-2.141,6-4.777,6h-23.19c-2.638,0-4.774-2.934-4.774-6C27.602,28.933,29.738,26,32.376,26z
+                     M68.056,74H34.507c-3.814,0-6.906-2.934-6.906-6c0-3.067,3.091-6,6.906-6h33.548c3.816,0,6.907,2.933,6.907,6
+                    C74.963,71.066,71.872,74,68.056,74z"></path>
+            </svg>
+            </div>
+        </div>
+    </div>
+    <div class="lessbuttons_com_otherbutton" style="background-color: #00a0c0;" title="Livejournal" onclick="lessbuttons_com_popup (&#39;livejournal&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_othersocimg" style="background: none;">
+            <svg height="100%" viewBox="-10 -10 120 120">
+            <path fill="#FFFFFF" d="M83.841,93.029c-0.104,0-0.207-0.021-0.305-0.063L53.119,80.264
+                c-0.246-0.103-0.422-0.322-0.473-0.582c-0.049-0.262,0.035-0.529,0.227-0.715c3.496-3.396,5.421-7.947,5.421-12.816
+                c0-2.063-0.351-4.088-1.041-6.021c-0.03-0.085-0.046-0.17-0.047-0.255L34.998,30.068c-4.462,3.861-8.684,9.629-8.207,15.252
+                c0.037,0.436-0.286,0.819-0.723,0.854c-0.424,0.034-0.816-0.284-0.854-0.72c-0.568-6.713,4.746-13.465,9.908-17.543
+                c6.219-4.914,12.965-7.016,17.604-5.49c0.414,0.136,0.642,0.582,0.504,0.999c-0.135,0.414-0.578,0.641-0.998,0.501
+                c-4.049-1.33-10.325,0.685-16.013,5.139L58.9,59.5c5.855,3.592,13.716,3.408,19.412-0.497c0.224-0.155,0.511-0.183,0.762-0.073
+                c0.251,0.108,0.425,0.336,0.469,0.604l5.078,32.584c0.044,0.283-0.066,0.566-0.292,0.744C84.188,92.971,84.016,93.029,83.841,93.029
+                z M54.799,79.25l28.044,11.713l-4.678-29.99c-5.653,3.37-13.011,3.582-18.837,0.582c0.363,1.498,0.548,3.039,0.548,4.596
+                C59.876,71.055,58.081,75.661,54.799,79.25z M19.949,37.601c-0.406,0-0.752-0.312-0.787-0.724
+                c-0.568-6.713,4.744-13.461,9.908-17.541c6.219-4.912,12.965-7.016,17.605-5.492c0.414,0.138,0.641,0.584,0.504,0.998
+                c-0.137,0.416-0.578,0.646-0.998,0.506c-4.084-1.341-10.412,0.711-16.132,5.23c-4.839,3.823-9.827,10.078-9.312,16.163
+                c0.037,0.437-0.285,0.819-0.722,0.854C19.994,37.601,19.972,37.601,19.949,37.601z M73.428,87.891
+                c1.15-3.957,4.432-7.004,8.518-7.815l1.896,12.164L73.428,87.891L73.428,87.891z M37.934,8.563
+                c-10.313,0-26.333,14.583-20.551,24.834l34.086,45.32l32.372,13.521l-5.522-35.422L44.232,11.688
+                C42.8,9.502,40.551,8.563,37.934,8.563 M37.934,5.4c3.802,0,6.951,1.582,8.881,4.459L80.842,54.91
+                c0.313,0.416,0.521,0.904,0.602,1.421l5.522,35.419c0.177,1.133-0.272,2.271-1.172,2.977c-0.567,0.445-1.256,0.674-1.953,0.674
+                c-0.411,0-0.825-0.08-1.221-0.243L50.25,81.635c-0.52-0.216-0.972-0.566-1.31-1.018L14.854,35.299
+                c-0.083-0.113-0.159-0.227-0.227-0.349c-2.472-4.381-2.12-9.728,0.99-15.054C20.287,11.904,30.297,5.4,37.934,5.4L37.934,5.4z"></path>
+            </svg>
+            </div>
+        </div>
+    </div>
+    <div class="lessbuttons_com_otherbutton" style="background-color: #6CAB36;" title="Evernote" onclick="lessbuttons_com_popup (&#39;evernote&#39;);">
+        <div class="lessbuttons_com_holder">
+            <div class="lessbuttons_com_othersocimg" style="background: none;">
+            <svg height="100%" viewBox="15 15 46 46">
+            <path fill="#FFFFFF" fill-opacity="1" fill-rule="evenodd" stroke-width="0.2" stroke-linejoin="round" d="M 43.8489,37.2997C 43.8489,37.2997 44.2106,34.8791 45.6137,34.8791C 47.0177,34.8791 48.9456,38.1112 48.9456,38.1112C 48.9456,38.1112 44.5479,37.2997 43.8489,37.2997 Z M 51.2373,24.1416C 50.5825,23.013 47.1567,21.7126 45.3788,21.7126C 43.6029,21.7126 40.7975,21.7126 40.7975,21.7126C 40.7975,21.7126 39.3265,19.0499 35.8683,19.0499C 32.4072,19.0499 32.6401,20.5925 32.6401,21.9097L 32.6401,27.2347L 31.0714,28.8905L 23.8278,28.8905C 23.8278,28.8905 21.7871,30.2401 21.7871,33.1576C 21.7871,36.0751 22.6925,46.2416 28.7717,47.1819C 35.9643,48.2962 37.1957,44.9534 37.1957,44.5517C 37.1957,42.8588 37.2382,40.2938 37.2382,40.2938C 37.2382,40.2938 39.3446,44.318 42.5253,44.318C 45.706,44.318 47.5555,46.1452 47.5555,48.0263C 47.5555,49.9095 47.5555,51.5081 47.5555,51.5081C 47.5555,51.5081 47.4372,53.6873 45.5678,53.6873C 43.6956,53.6873 41.5761,53.6873 41.5761,53.6873C 41.5761,53.6873 40.266,52.667 40.266,51.2558C 40.266,49.8451 40.9065,49.4619 41.6544,49.4619C 42.4019,49.4619 43.0163,49.5487 43.0163,49.5487L 43.0163,46.5806C 43.0163,46.5806 36.9923,46.5414 36.9923,51.1539C 36.9923,55.7651 40.1426,56.9501 42.6685,56.9501C 45.1918,56.9501 46.7832,56.9501 46.7832,56.9501C 46.7832,56.9501 54.2129,55.9946 54.2129,41.3163C 54.2129,26.6363 51.8925,25.271 51.2373,24.1416 Z M 29.475,27.2174L 23.3318,27.2107L 31.0285,19.4668L 31.0302,25.7124L 29.475,27.2174 Z "></path>
+            </svg>
+            </div>
+        </div>
+    </div><div class="lessbuttons_com_buttons_more" style="background-color: #6099d0;"><div title="More…" class="lessbuttons_com_arrow" style="background: none;" onclick="lessbuttons_com_popup (&#39;&#39;);">
+<svg height="100%" viewBox="0 0 512 512">
+<path id="menu-icon" d="M462,163.5H50v-65h412V163.5z M462,223.5H50v65h412V223.5z M462,348.5H50v65h412V348.5z" fill="#FFFFFF"></path>
+</svg>
+</div><div title="Hide" class="lessbuttons_com_arrow" style="background: none;" onclick="this.parentNode.parentNode.style.display = &#39;none&#39;;">
+<svg height="100%" viewBox="-50 -50 612 612">
+<path fill="#FFFFFF" d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5
+	c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9
+	c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"></path>
+</svg>
+</div></div></div></div><script async="" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/script.js"></script>		<script type="text/javascript">
+			!function(d,s,id){
+				var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js=d.createElement(s);
+					js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			}(document,"script","twitter-wjs");
+		</script>
+		<script type="text/javascript" src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/e-201546.js" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.7.2',blog:'78624167',post:'35',tz:'4',srv:'esp8266.ru'} ]);
+	_stq.push([ 'clickTrackerInit', '78624167', '35' ]);
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8f13eb1169","applicationID":"7435816","transactionName":"ZlFbY0ADWEsAWhJRDl8beFRGC1lWTkoPVgZdUQ==","queueTime":0,"applicationTime":860,"atts":"ShZYFQgZS0U=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using memcached
+Page Caching using memcached
+Database Caching 2/59 queries in 0.021 seconds using memcached
+Object Caching 2626/2741 objects using memcached
+Application Monitoring using New Relic
+
+ Served from: esp8266.ru @ 2015-11-13 13:52:26 by W3 Total Cache --><div id="lightbox-tmp"></div><div id="lightbox-loading"><div></div></div><div id="lightbox-overlay" style="display: none;"></div><div id="lightbox-wrap"><div id="lightbox-outer"><div id="lightbox-content"></div><a id="lightbox-close"></a><div id="lightbox-title"></div><a href="javascript:;" id="lightbox-left"><span id="lightbox-left-ico"></span></a><a href="javascript:;" id="lightbox-right"><span id="lightbox-right-ico"></span></a></div></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><img src="./Распиновка ESP8266, различные модификации модулей на базе ESP8266 – esp8266_files/g.gif" id="wpstats"></body></html>
